@@ -15,16 +15,22 @@ class MyApp extends StatelessWidget {
       ),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          return MaterialApp.router(
-            title: 'Edu MVP',
-            theme: AppTheme.lightTheme,
-            routerConfig: AppRoutes.router,
-            debugShowCheckedModeBanner: false,
+          return MediaQuery(
+            data: MediaQuery.of(
+              context,
+            ).copyWith(textScaler: TextScaler.noScaling),
+            child: MaterialApp.router(
+              title: 'YG MVP',
+              theme: AppTheme.lightTheme,
+              routerConfig: AppRoutes.router,
+              debugShowCheckedModeBanner: false,
+            ),
           );
         }
         return MaterialApp(
           theme: AppTheme.lightTheme,
           home: Scaffold(
+            backgroundColor: Colors.black,
             body: Center(
               child: Container(
                 decoration: BoxDecoration(

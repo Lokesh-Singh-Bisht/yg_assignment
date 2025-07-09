@@ -8,7 +8,10 @@ import 'blocs/auth/auth_bloc.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   if (Platform.isAndroid) {
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(

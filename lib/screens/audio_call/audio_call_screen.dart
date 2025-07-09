@@ -15,9 +15,6 @@ class AudioCallScreen extends StatefulWidget {
 class _AudioCallScreenState extends State<AudioCallScreen> {
   @override
   Widget build(BuildContext context) {
-    final user = widget.userData;
-    final callID =
-        user.audioCallToken.isNotEmpty ? user.audioCallToken : 'default_room';
     return Scaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -29,8 +26,11 @@ class _AudioCallScreenState extends State<AudioCallScreen> {
               userID:
                   FirebaseAuth.instance.currentUser?.uid ??
                   AppConstants.dummyUserId,
-              userName: user.name,
-              callID: callID,
+              userName: widget.userData.name,
+              callID:
+                  widget.userData.audioCallToken.isNotEmpty
+                      ? widget.userData.audioCallToken
+                      : 'default_room',
               config:
                   ZegoUIKitPrebuiltCallConfig.oneOnOneVoiceCall()
                     ..topMenuBar.isVisible = true

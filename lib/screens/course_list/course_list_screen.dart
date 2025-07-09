@@ -44,7 +44,7 @@ class _CourseListScreenState extends State<CourseListScreen> {
                       child: Padding(
                         padding: const EdgeInsets.all(16),
                         child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(
                               child: Column(
