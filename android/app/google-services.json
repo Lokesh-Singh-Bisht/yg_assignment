@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "678365661675",
+    "project_id": "yg-a-ff86b",
+    "storage_bucket": "yg-a-ff86b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678365661675:android:2f449c370ae6c3e0a831ae",
+        "android_client_info": {
+          "package_name": "com.example.yg_assignment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQi5qthfXu6TyOwVJFNM_BrVcDnC8XfWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
