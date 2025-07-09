@@ -22,7 +22,7 @@ This is a **Flutter-based app** demonstrating:
 | 📘 **Courses**        | List of courses from Firestore                                          |
 | 🎥 **Course Detail**  | UI-only screen with video/PDF placeholders                              |
 | 📞 **Audio Call**     | Simulated screen with ZegoCloud (dummy token from Firestore)            |
-| 🗂 **Bottom NavBar**  | Navigate between Home, Courses, Details, and Call screens               |
+| 🗂 **Bottom NavBar**  | Navigate between Home and Courses screens                                |
 
 ---
 
